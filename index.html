@@ -24,8 +24,11 @@
             <input type="email" name="username" placeholder="Type your email here" id="username">
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Type your password here" id="password">
+
+            <span role="button">Click Here</span>
+
             <div aria-label="Click to Login">Log in</div>
-            <button aria-label="Click to button">Log In</button>
+            <button aria-label="Click to button" disabled aria-disabled="true">Log In</button>
         </form>
 
     </section>
@@ -35,7 +38,29 @@
     </div>
 
     </section>
-    <section>MAIN-SECCION 3</section>
+    <section>MAIN-SECCION 3
+
+        <h3 id="user-list">Listado de Usuarios</h3>
+        <div aria-describedby="user-list">
+            Estos son los usuarios registrados en el sistema
+            <ul>
+                <li>Usuario 1</li>
+                <li>Usuario 2</li>
+                <li>Usuario 3</li>
+                <li>Usuario 4</li>
+            </ul>
+        </div>
+    <button aria-label="Guardar los datos del usuario">Guardar</button>
+
+        <div>
+            <p id="description-next-page">
+                Da click en el siguiente enlace y encontraras todos nuestros productos
+            </p>
+            <a href="/second.html" aria-describedby="description-next-page">Ir al siguiente enlace</a>
+        </div>
+
+
+    </section>
 </main>
 <footer style="background-color: purple">FOOTER</footer>
 </body>
