@@ -23,7 +23,7 @@
             <label for="username">Username</label>
             <input type="email" name="username" placeholder="Type your email here" id="username">
             <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Type your password here" id="password">
+            <input type="password" name="password" placeholder="Type your password here" id="password" required aria-required="true">
 
             <span role="button">Click Here</span>
 
@@ -58,7 +58,21 @@
             </p>
             <a href="/second.html" aria-describedby="description-next-page">Ir al siguiente enlace</a>
         </div>
+        <div hidden aria-hidden="true">
+            <p>Este es un texto oculto</p>
+        </div>
 
+        <button aria-label="Guardar los datos del producto" disabled aria-disabled="true">
+            Enviar
+        </button>
+
+        <ul aria-label="Menu de catgorias del poducto" role="list">
+            <li role="listitem" aria-selected="true">Elemento 1</li>
+            <li role="listitem" aria-selected="false">Elemento 2</li>
+            <li role="listitem" aria-selected="false">Elemento 3</li>
+        </ul>
+
+        <div role="alert">Estas seguro que deseas eliminar este producto?</div>
 
     </section>
 </main>
